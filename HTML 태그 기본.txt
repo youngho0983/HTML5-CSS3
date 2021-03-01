@@ -1,4 +1,4 @@
-보이는 뷰와 보이지 않는 코드로 나뉨
+﻿보이는 뷰와 보이지 않는 코드로 나뉨
 tag,element,attribute
 
 tag:HTML 페이지에서 객체를 만들 때 사용하는 것
@@ -49,6 +49,19 @@ base:웹 페이지의 기본 경로를 지정합니다(써본 적 없음)
 
 
 
+div span
+block> div형식  div , h1~h6 , p ul li ol li , table, form 태그
+inline> span형식 span, a , input, 글자형식 태그
+inlnine block> ? 아직 안나옴(예전에 배웠는데 기억은 잘 안남)
+
+
+시멘틱(div와 같은) ) 검색 엔진에게 알려주기 위해서 필요한 부분
+header  헤더를 의미
+nav   네비게이션을 의미
+aside  사이드에 위치한 공간을 의미
+section  여러 중심 내용을 감싸는 공간을 의미
+article 글자가 많이 들어가는 부분을 의미
+footer  푸터를 의미
 
 
 

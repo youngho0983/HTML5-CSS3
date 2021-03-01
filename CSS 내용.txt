@@ -1,0 +1,96 @@
+﻿1) css 선택자 기본 
+CSS3 선택자는 특정한 HTML 태그를 선택할 때 사용
+(이를 통해 기능 , 모양을 바꿀 수 있음)
+
+   h1   {color : red; }
+  선택자 속성  스타일값
+
+이러한 코드를 css블록이라고 부르며 style 태그 내부에 입력해서 사용함
+<head>
+	<title>document</title >
+	<style>
+		h1{
+			color:red;
+			background-color:orange;
+		}
+
+선택자의 종류
+
+전체 선택자    *  모두 선택함
+
+태그 선택자    div   h1  header  등등 실제 태그 이름
+
+아이디 선택자  #아이디
+
+클래스 선택자 .클라스
+ 
+후손 선택자   선택자 선택자  header h1
+
+자식 선택자   선택자>선택자  header>h1
+
+속성 선택자   선택자[속성=속성값]  input[type=text]
+
+	      선택자[속성~=값]     input[data-role~=row]
+	      
+ 	      선택자[속성!=값]     input[data-role!=row]
+    
+	      선택자[속성^=값]     ‌‌input[data-rolee^=row]
+
+              선택자[속성$=값]     div[[data-role$=9]
+      
+              선택자[속성*=값]      div[data-role*=row]
+
+
+동위 선택자   선택자 + 선택자    h1+div
+ 
+              선택자 ~ 선택자    h1~div
+
+
+수고 선택자   선택자:first-child
+ 
+              선택자:last-child
+
+              선택자:nth-child(수열)
+
+              선택자:nth-last-child(수열)
+
+              선택자:first-of-type
+
+              선택자:last-of-type
+
+              선택자:nth-of-type(수열)
+
+              선택자:nth-last-of-type(수열)
+
+
+반응 선택자   선택자:active
+         
+              선택자:hover
+
+상태 선택자    :checked
+
+               :focused
+
+               :enabled
+
+               :disabled
+
+링크 선택자    :link
+
+               :visited
+
+문자 선택자    ::first-letter
+
+               ::first-line
+
+               ::after
+
+               ::before
+
+               ::selecction
+
+부정 선택자    ::선택자:not(선택자)    li:not(.item)
+
+
+
+
