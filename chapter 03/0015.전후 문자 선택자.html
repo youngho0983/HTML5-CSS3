@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        counter-increment: rint;
+      }
+      p::before {
+        content: counter(rint) ".";
+      }
+      p::after {
+        content: "-" attr(data-page) "page";
+      }
+      p::first-letter {
+        color: red;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <p data-page="52">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nisi
+      incidunt doloremque aliquid impedit totam quia exercitationem provident
+      nihil ipsam illum perferendis eveniet ullam, repudiandae esse quisquam
+      blanditiis perspiciatis deserunt.
+    </p>
+    <p data-page="273">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex deleniti
+      asperiores, perferendis et placeat vitae quibusdam nihil repellendus eaque
+      qui nisi, earum quasi fuga. Fugit dicta aspernatur consectetur
+      praesentium?
+    </p>
+  </body>
+</html>
