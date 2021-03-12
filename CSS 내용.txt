@@ -156,3 +156,8 @@ padding 내부
 전체의 가로= (margin + padding+border)*2+width 
 전체 세로 = (margin + padding+border)*2+height
 	
+box-sizing===========================================================
+border-box      :박스의 너비=width +2*margin   (이 안에 
+content-box     :기본으로 적용되는 
+inherit         :
+initial         :
