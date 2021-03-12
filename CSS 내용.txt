@@ -106,4 +106,53 @@ CSS3 선택자는 특정한 HTML 태그를 선택할 때 사용
 
 
 transition-duration:1s (변화 속도)
+
+
+크기의 단위 ==============================================================
+
+%,em,cm,mm,inch,px
+
+%   백분위
+em  배수 단위
+px  픽셀
+
+색상 단위=================================================================
+#000000  HEX 코드
+rgb(red,green,blue)        RGB단위
+rgba(red,green,blue,alpha)  RGBA
+hsl(hue,saturation,lightness) HSL색상
+hsla(hue,`` ,`` ,  alpha) HSLA 색상단위
+rgb 는 255,255,255 가능
+HEX 는 #FFFFFF 가능
+
+
+display 속성 ============================================================
+none 태그를 화면에 보이지 않게 만듬
+block 태그를 block형식으로 지정  div형식
+inline 태그를 inline형식으로     span 형식
+inline-block 태그를 ..시발.. 이게 설명이여 똥이여.
+
+
+iinline , inline-block 의 차이점은 ?
+
+inline으로 하면 width 를 해도 1줄로 
+inlineblock으로 하면 width에서 줄이 바뀜
+
+visbility==================================================================
+visible 태그를 보이게 만듬
+hidden 태그를 안보이게 만듬
+collapse table 태그를 보이지 않게 만듬
+
+(hidden=hidden 이랑 다른 점이 뭐야?)
+아하. visibility:hidden 은 위치는 고정이구나.
+
+
+box======================================================================
+margin 가장 밖
+border 태두리
+padding 내부
+
+
+전체의 가로= (margin + padding+border)*2+width 
+전체 세로 = (margin + padding+border)*2+height
 	
