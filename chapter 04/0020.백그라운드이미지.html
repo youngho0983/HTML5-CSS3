@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
-        background-color: red;
-        border: 10px solid black;
-        width: 100px;
-        height: 100px;
-        margin: 30px;
-      }
       #lo1 {
-        box-sizing: border-box;
+        /* border: 1px solid black;
+        width: 100px;
+        height: 100px; */
+        background-image: url(1.jpg);
       }
 
-      #lo2 {
-        box-sizing: content-box;
+      body {
+        background-image: url(1.jpg), url(9.jpg);
+        background-size: 100px, 250px;
       }
     </style>
   </head>
   <body>
-    <div id="lo1"></div>
-    <div id="lo2"></div>
+    <p style="font-size: 100px">아</p>
   </body>
 </html>
