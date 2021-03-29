@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">hello</button>
+    <script>
+      window.onload = function () {
+        btn = document.getElementById("btn");
+        btn.onclick = function () {
+          xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function () {
+            console.log(xhr.readyState);
+            if (xhr.readyState === 4) {
+              console.log(xhr.status);
+              if (xhr.status == 200) {
+                // console.log(xhr.responseText);
+                // console.log(xhr.responseXML);
+                var xm = xhr.responseXML;
+                var goodnod = xm.getElementsByTagName("root");
+                console.log(goodnod[0]);
+                console.log(goodnod[0].lastChild.data);
+                console.log(goodnod.length);
+              }
+            }
+          };
+          xhr.open("get", "test.xml");
+          xhr.send();
+        };
+      };
+    </script>
+  </body>
+</html>

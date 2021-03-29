@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        counter-increment: hello;
+      }
+      p::before {
+        content: counter(hello);
+      }
+      p::after {
+        color: blue;
+        content: "-" attr(data-page) "page";
+      }
+      p::first-letter {
+        color: red;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p data-page="3">Lorem, ipsum dolor.</p>
+    <p data-page="60">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+      alias.
+    </p>
+    <p data-page="100">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic id quod nihil
+      earum maxime totam mollitia voluptas ducimus voluptates quisquam.
+    </p>
+  </body>
+</html>
