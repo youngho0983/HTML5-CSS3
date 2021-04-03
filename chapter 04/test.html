@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+    
+        body *{
+            margin: 0px;
+            border:1px solid black;
+            width: 1000px;
+        }
+       #left{
+           width: 200px;
+           height: 300px;
+           
+       } 
+       #right{
+           width: 194px;
+           height:300px;
+       }
+       section{
+           width: 600px;
+           height: 300px;
+       }
+       h1{
+           border:hidden
+       }
+       div *{
+           float: left;
+       }
+       #bar{
+           float: left;
+       }
+       #bar>p:nth-child(1){
+           color: red;
+           width: 200px;
+       }
+       #bar>p:nth-child(1):hover{
+           color: green;
+           width: 200px;
+           
+           
+       }
+       
+
+       
+       #bar>p:nth-child(2){
+           color: blue;
+           width: 200px;
+       }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            head
+        </h1>
+    </header>
+    <nav>
+        <h1>navigation</h1>
+        <div id="bar"><p>place1</p> <p>place2</p></div>
+    </nav>
+    <div>
+        <aside id="left"><h1>left
+        </h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sit incidunt alias esse. Quidem voluptatem quia, tenetur aut aperiam ut sit! Unde ipsam voluptates mollitia porro omnis eius nihil in!</aside>
+        <section><h1>section</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae assumenda incidunt consequatur quis blanditiis modi! Ducimus explicabo aliquam ut dolores, quas, doloremque magni doloribus ipsam modi neque corrupti libero esse.</section>
+        <aside id="right"><h1>right</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, porro error quia rerum quam accusantium maiores earum dolor illo tenetur praesentium asperiores dicta dignissimos iste ex labore? Magni, tempore at.</aside2>
+    </div>
+    <footer><h1>footer</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati enim at ipsa tempora quis, nam, earum nobis eius, quidem explicabo ipsam consequatur velit debitis fugit odit tenetur. Veniam, animi!</footer>
+</body>
+</html>
